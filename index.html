@@ -57,26 +57,28 @@
 
   <fieldset class="frame">
     <legend>An interesting fact about you!</legend>
-    <label class="question">
+    <label class="question" for="">
       Do you love cats?
-      <input type="radio" id="Yes" name="drone" value="Yes">
-      <label for="Yes">Yes</label>
-      <input type="radio" id="No" name="drone" value="No">
-      <label for="No">No</label>
-    </label>
+      <label for="Yes">
+        <input type="radio" id="Yes" name="drone" value="Yes">
+        Yes
+      </label>
 
+      <label for="No">
+        <input type="radio" id="No" name="drone" value="No">
+        No
+      </label>
+    </label>
 
     <label class="question">
       What is your favorite color?
       <input type="color" name="color">
     </label>
 
-
     <label class="question">
       What time do you go to bed?
       <input type="time" name="goodnight">
     </label>
-
 
     <label class="question">
       What are your favorite brand of cars?
@@ -87,12 +89,12 @@
       </select>
     </label>
 
-
     <label class="question-bottom">
       How do you rate our work?
       <input type="range" name="mark-1" value="0">
     </label>
   </fieldset>
+
 
   <fieldset class="frame-bottom">
     <legend>Additional info:</legend>
@@ -108,12 +110,8 @@
       </select>
     </label>
   </fieldset>
-  <br>
 
-
-  <button type="submit">Submit</button>
-
-
+  <button class="put" type="submit">Submit</button>
 
   </form>
   <script type="text/javascript" src="./main.js"></script>
